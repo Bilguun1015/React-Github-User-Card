@@ -7,10 +7,10 @@ const FollowersCard = ({follower}) => (
     <Card.Content>
       <Card.Header>{follower.login}</Card.Header>
       <Card.Meta>
-        <span className='date'>Join at {follower.created_at}</span>
+        <span className='date'>Join at {follower.created_at} unknown</span>
       </Card.Meta>
       <Card.Description>
-        Team Lead
+        {follower.id}
       </Card.Description>
     </Card.Content>
     <Card.Content extra>

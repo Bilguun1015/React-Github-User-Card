@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Icon, Image, Button } from 'semantic-ui-react'
 
-const UserCard = ({users}) => (
+const UserCard = ({users, visible}) => (
   <Card>
     <Image src={users.avatar_url} wrapped ui={false} />
     <Card.Content>
@@ -14,7 +14,7 @@ const UserCard = ({users}) => (
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <Button >
+      <Button onClick = {visible}>
         <Icon name='user' />
         {users.followers}
       </Button>
